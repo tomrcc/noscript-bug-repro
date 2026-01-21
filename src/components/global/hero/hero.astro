@@ -49,8 +49,19 @@ const hasMultipleImages = hero_images && hero_images.length > 0;
 const hasSingleImage = image && image_alt;
 ---
 
+<noscript>
+  <style>
+    body {
+      background-color: red;
+    }
 
-<section class="relative isolate pt-24 bg-primary/5 overflow-hidden">
+    .hero-test {
+      background-color: purple !important;
+      color: white;
+    }
+  </style>
+</noscript>
+<section class="hero-test relative isolate pt-24 bg-primary/5 overflow-hidden">
   <!-- Background shape with optimized image mask -->
   <div
     class="hidden lg:block absolute top-0 left-0 -z-10 w-96 h-[671px] bg-primary/70"
